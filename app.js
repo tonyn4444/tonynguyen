@@ -5,7 +5,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-	res.send("Welcome")
+	res.render("home")
 });
 
 var port = process.env.PORT || 3000
