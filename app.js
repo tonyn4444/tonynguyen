@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
 
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
