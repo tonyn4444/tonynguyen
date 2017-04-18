@@ -14,6 +14,10 @@ app.get('/portfolio', function(req, res) {
 	res.render('full_portfolio');
 });
 
+app.get('/about', function(req, res) {
+	res.render('about');
+});
+
 var port = process.env.PORT || 3000
 
 app.listen(port, process.env.IP, function() {

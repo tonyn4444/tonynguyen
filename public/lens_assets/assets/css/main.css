@@ -858,8 +858,9 @@
 		#thumbnails article {
 			position: relative;
 			width: 50%;
-			background: #101010;
+			background: white;
 			outline: 0;
+			border: 1px solid grey;
 		}
 
 			#thumbnails article .thumbnail {
