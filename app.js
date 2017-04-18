@@ -10,6 +10,10 @@ app.get('/', function(req, res) {
 	res.render("home")
 });
 
+app.get('/portfolio', function(req, res) {
+	res.render('full_portfolio');
+});
+
 var port = process.env.PORT || 3000
 
 app.listen(port, process.env.IP, function() {
