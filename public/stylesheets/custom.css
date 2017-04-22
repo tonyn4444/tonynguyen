@@ -6,7 +6,14 @@
   /*border: red 2px solid;*/
   position: relative;
   margin: 0;
+}
 
+.navbar-default {
+  background-color: #283e4a;
+}
+
+.links {
+  color: white !important;
 }
 
 html {

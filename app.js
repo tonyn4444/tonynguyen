@@ -23,6 +23,10 @@ app.get('/index', function(req, res) {
 	res.render('index');
 });
 
+app.get('/about_site', function(req, res) {
+	res.render('about_site');
+})
+
 var port = process.env.PORT || 3000
 
 app.listen(port, process.env.IP, function() {

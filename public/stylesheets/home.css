@@ -1,4 +1,18 @@
+#index-nav {
+  margin-right: -10px;
+}
 
+.nav-link {
+  color: white !important;
+}
+
+#home-nav {
+  background-color: #283e4a;
+}
+
+.home-links {
+  color: white !important;
+}
 
 .animation-target {
   -webkit-animation: animation 2000ms linear both;
