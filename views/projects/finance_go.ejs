@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ReviewShare</title>
+	<title>Finance-Go</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="/stylesheets/reviewshare_styles.css">
+	<link rel="stylesheet" href="/stylesheets/finance_go_styles.css">
 </head>
 <body>
 
@@ -31,8 +31,8 @@
 		<div class="row">
 
 		<div class="col-md-12 title">
-			<em><h1>ReviewShare</h1></em>
-			<span id="github"><a href="https://github.com/tonyn4444/yelp-camp" target="_blank">GitHub</a></span><span id="demo"><a target="_blank" href="http://reviewshare.herokuapp.com/">Demo</a></span>
+			<em><h1>Finance-Go</h1></em>
+			<span id="github"><a href="https://github.com/tonyn4444/finance-go" target="_blank">GitHub</a></span><span id="demo"><a target="_blank" href="https://finance-go.herokuapp.com/users/sign_in">Demo</a></span>
 			<hr>
 		</div>
 		</div>
@@ -40,23 +40,23 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="thumbnail">
-					<img src="/images/reviewshare/signup.png">
+					<img src="/images/finance-go/login.png">
 					<!-- <div class="caption"> -->
 						<!-- <h4>Users/New (Registration Page)</h4> -->
 					<!-- </div> -->
 				</div>
 			</div>
 			<div class="col-md-4 desc">
-			<h3>Users/New (Registration Page)</h3>
+			<h3>Users/Login (Login Page)</h3>
 				<ul>
 					<li>
-						ReviewShare utilizes the Passport for user authentication. 
+						Finance-Go utilizes the Devise for user authentication. 
 					</li>
 					<li>
-						Passport allows for users to sign up and sign to their profiles using sessions.
+						Devise allows for users to sign up and sign to their profiles using sessions.
 					</li>
 					<li>
-						User data is stored in MongoDB and schema designed with Mongoose.
+						User data is stored in PostgreSQL and schema design with ActiveRecord/Ruby on Rails models.
 					</li>
 				</ul>
 			</div>
@@ -66,7 +66,7 @@
 			<!-- <div class="row">
 				<div class="col-md-8">
 				<div class="thumbnail">
-					<img src="/images/reviewshare/index.png"> -->
+					<img src="/images/finance-go/index.png"> -->
 					<!-- <div class="caption"> -->
 						<!-- <h4>Reviews/Index Page</h4>
 					</div> -->
@@ -76,7 +76,7 @@
 			<h3>Reviews/Index Page</h3>
 				<ul>
 					<li>
-						ReviewShare utilizes the Passport for user authentication. 
+						finance-go utilizes the Passport for user authentication. 
 					</li>
 					<li>
 						Passport allows for users to sign up and sign to their profiles using sessions.
@@ -92,21 +92,23 @@
 			<div class="row">
 			<div class="col-md-8">
 				<div class="thumbnail">
-					<img src="/images/reviewshare/index2.png">
+					<img src="/images/finance-go/index.png">
 					<!-- <div class="caption"> -->
 						<!-- <h4>Reviews/Index Page (Cont.)</h4>
 					</div> -->
 				</div>
 			</div>
 			<div class="col-md-4 desc">
-			<h3>Reviews/Index (Cont.)</h3>
+			<h3>Portfolio/Index</h3>
 				<ul>
 					<li>
-						Bootstrap & Semantic UI framworks used for styling.
+						Users can search add stocks to their portfolios.
 					</li>
+					<li>Stock data from Ruby on Rails gem that retrieves information from YahooFinance API.</li>
 					<li>
 						CSS3 and Bootstrap grid system used for responsive design and is mobile friendly.
 					</li>
+
 					<!-- <li>
 						User data is stored in MongoDB and schema designed with Mongoose.
 					</li> -->
@@ -118,7 +120,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="thumbnail">
-					<img src="/images/reviewshare/show.png">
+					<img src="/images/finance-go/friends.png">
 					<!-- <div class="caption"> -->
 						<!-- <h4></h4>
 					</div> -->
@@ -128,17 +130,17 @@
 			<h3>Reviews/Show (About Page)</h3>
 				<ul>
 					<li>
-						Users can add comments to reviews that interest them. 
+						Users can add their friends and follow their portfolio activity (Fixing this feature). 
 					</li>
 					<li>
-						Owners of the review can edit/delete the post.
+						Many-many relationship so each user can have many friends and stocks.
 					</li>
-					<li>
+					<!-- <li>
 						User data is stored in MongoDB and comments are nested in user schema.
 					</li>
 					<li>
 						Location retrieved from geolocation object and map rendered using GoogleMaps API.
-					</li>
+					</li> -->
 				</ul>
 				</div>
 			</div>
@@ -147,7 +149,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="thumbnail">
-					<img src="/images/reviewshare/new.png">
+					<img src="/images/finance-go/edit.png">
 					<!-- <div class="caption"> -->
 						<!-- <h4></h4>
 					</div> -->
@@ -157,14 +159,17 @@
 			<h3>Reviews/New (New Review Form) </h3>
 				<ul>
 					<li>
-						New reviews POST data is parsed with body-parser before creation. 
+						Users can edit their profile information through PUT request. 
 					</li>
 					<li>
-						EDIT/DELETE routes for reviews utilizes method-override library.
+						User can delete their profile through DESTROY request.
 					</li>
 					<li>
+						Design layout is from Twitter's twitter-bootstrap gem.
+					</li>
+					<!-- <li>
 						Passport authorizes users through middleware to ensure they are logged in before being able to use this form.
-					</li>
+					</li> -->
 				</ul>
 				</div>
 			</div>

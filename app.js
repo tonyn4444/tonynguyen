@@ -31,6 +31,10 @@ app.get('/projects/reviewshare', function(req, res) {
 	res.render('projects/reviewshare');
 });
 
+app.get('/projects/finance_go', function(req, res) {
+	res.render('projects/finance_go');
+});
+
 var port = process.env.PORT || 3000
 
 app.listen(port, process.env.IP, function() {
