@@ -27,6 +27,10 @@ app.get('/about_site', function(req, res) {
 	res.render('about_site');
 });
 
+app.get('/test', function(req, res) {
+	res.render('test');
+});
+
 app.get('/projects/reviewshare', function(req, res) {
 	res.render('projects/reviewshare');
 });
