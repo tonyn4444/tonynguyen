@@ -5,12 +5,17 @@ body {
   background-color: #283e4a;
 }
 
+.project-nav-links {
+	font-size: 15;
+}
+
 span {
 	padding: 25px;
 }
 
 .home-links {
   color: white !important;
+  font-size: 17px;
 }
 
 div {
