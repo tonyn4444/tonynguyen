@@ -35,6 +35,22 @@ app.get('/projects/finance_go', function(req, res) {
 	res.render('projects/finance_go');
 });
 
+app.get('/projects/wikipedia_viewer', function(req, res) {
+	res.render('projects/wikipedia_viewer');
+});
+
+app.get('/projects/quote-it-up', function(req, res) {
+	res.render('projects/quote_it_up');
+});
+
+app.get('/projects/weather-forecast', function(req, res) {
+	res.render('projects/weather_forecast');
+});
+
+app.get('/projects/color-game', function(req, res) {
+	res.render('projects/color_game');
+});
+
 var port = process.env.PORT || 3000
 
 app.listen(port, process.env.IP, function() {
