@@ -25,7 +25,11 @@ app.get('/index', function(req, res) {
 
 app.get('/about_site', function(req, res) {
 	res.render('about_site');
-})
+});
+
+app.get('/projects/reviewshare', function(req, res) {
+	res.render('projects/reviewshare');
+});
 
 var port = process.env.PORT || 3000
 

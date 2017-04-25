@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReviewShare</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/reviewshare_styles.css">
+</head>
+<body>
+
+<nav class="nav navbar-default" id="home-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand home-links" href="/index">Tony Nguyen</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+
+					
+						<!-- <li><a href="/">Home</a></li> -->
+						<li><a class="home-links" href="/">Projects</a></li>
+						<li><a class="home-links" href="/index">About Me</a></li>
+						<li><a class="home-links" href="/about">Education & Employment</a></li>
+						<li><a class="home-links" href="/about_site">About Site</a></li>
+						<!-- <li><a href="/logout">Contact</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<div class="container">
+		<div class="row">
+
+		<div class="col-md-12 title">
+			<em><h1>ReviewShare</h1></em>
+			<span id="github"><a href="https://github.com/tonyn4444/yelp-camp" target="_blank">GitHub</a></span><span id="demo"><a target="_blank" href="http://reviewshare.herokuapp.com/">Demo</a></span>
+			<hr>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail">
+					<img src="/images/reviewshare/signup.png">
+					<!-- <div class="caption"> -->
+						<!-- <h4>Users/New (Registration Page)</h4> -->
+					<!-- </div> -->
+				</div>
+			</div>
+			<div class="col-md-4 desc">
+			<h3>Users/New (Registration Page)</h3>
+				<ul>
+					<li>
+						ReviewShare utilizes the Passport for user authentication. 
+					</li>
+					<li>
+						Passport allows for users to sign up and sign to their profiles using sessions.
+					</li>
+					<li>
+						User data is stored in MongoDB and schema designed with Mongoose.
+					</li>
+				</ul>
+			</div>
+			</div>
+			<hr>
+
+			<!-- <div class="row">
+				<div class="col-md-8">
+				<div class="thumbnail">
+					<img src="/images/reviewshare/index.png"> -->
+					<!-- <div class="caption"> -->
+						<!-- <h4>Reviews/Index Page</h4>
+					</div> -->
+				<!-- </div>
+			</div>
+			<div class="col-md-4 desc">
+			<h3>Reviews/Index Page</h3>
+				<ul>
+					<li>
+						ReviewShare utilizes the Passport for user authentication. 
+					</li>
+					<li>
+						Passport allows for users to sign up and sign to their profiles using sessions.
+					</li>
+					<li>
+						User data is stored in MongoDB and schema designed with Mongoose.
+					</li>
+				</ul>
+			</div>
+			</div>
+			<hr> -->
+
+			<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail">
+					<img src="/images/reviewshare/index2.png">
+					<!-- <div class="caption"> -->
+						<!-- <h4>Reviews/Index Page (Cont.)</h4>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-md-4 desc">
+			<h3>Reviews/Index (Cont.)</h3>
+				<ul>
+					<li>
+						Bootstrap & Semantic UI framworks used for styling.
+					</li>
+					<li>
+						CSS3 and Bootstrap grid system used for responsive design and is mobile friendly.
+					</li>
+					<!-- <li>
+						User data is stored in MongoDB and schema designed with Mongoose.
+					</li> -->
+				</ul>
+				</div>
+			</div>
+			<hr>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail">
+					<img src="/images/reviewshare/show.png">
+					<!-- <div class="caption"> -->
+						<!-- <h4></h4>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-md-4 desc">
+			<h3>Reviews/Show (About Page)</h3>
+				<ul>
+					<li>
+						Users can add comments to reviews that interest them. 
+					</li>
+					<li>
+						Owners of the review can edit/delete the post.
+					</li>
+					<li>
+						User data is stored in MongoDB and comments are nested in user schema.
+					</li>
+					<li>
+						Location retrieved from geolocation object and map rendered using GoogleMaps API.
+					</li>
+				</ul>
+				</div>
+			</div>
+			<hr>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail">
+					<img src="/images/reviewshare/new.png">
+					<!-- <div class="caption"> -->
+						<!-- <h4></h4>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-md-4 desc">
+			<h3>Reviews/New (New Review Form) </h3>
+				<ul>
+					<li>
+						New reviews POST data is parsed with body-parser before creation. 
+					</li>
+					<li>
+						EDIT/DELETE routes for reviews utilizes method-override library.
+					</li>
+					<li>
+						Passport authorizes users through middleware to ensure they are logged in before being able to use this form.
+					</li>
+				</ul>
+				</div>
+			</div>
+			<hr>
+
+		
+	</div>
+
+</body>
+</html>
