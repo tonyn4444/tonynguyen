@@ -1,0 +1,14 @@
+h1 {
+	text-align: center;
+}
+
+.primary {
+	max-width: 300px !important;
+	margin-bottom: 50px;
+}
+
+.project-desc {
+	margin-top: 100px;
+	padding-top: 150px;
+}
+
